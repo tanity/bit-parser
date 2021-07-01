@@ -45,7 +45,7 @@ ps* push_ps_html_tag_name(ps* const pso, ps* const ps_source, unsigned char cons
 	pso_next = ps_new();
 	*pso_next = *ps_source;
 #ifdef PS_NAME
-	sprintf(pso_next->name, "ps_%llu", ps_n);
+	sprintf(pso_next->name, "ps_%lu", ps_n);
 #endif
 	ps_set_ci(pso, c, pso_next, E);
 

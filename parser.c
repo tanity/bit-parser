@@ -90,12 +90,12 @@ int main(int argc, char* argv[])
 				{
 					for (size_t i = 0; i < tag_n; i++)
 					{
-						printf("%7llu\t%s\n", i, tags[i].name);
+						printf("%7lu\t%s\n", i, tags[i].name);
 					}
 				}
 				else if (!strcmp(cmd, "psm"))
 				{
-					printf("Total States Generated : %llu\n", ps_n);
+					printf("Total States Generated : %lu\n", ps_n);
 				}
 				else if (!strcmp(cmd, "q") || !strcmp(cmd, "quit") || !strcmp(cmd, "bye") || !strcmp(cmd, "exit"))
 				{

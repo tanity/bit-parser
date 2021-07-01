@@ -142,12 +142,12 @@ void fprintfcomma(FILE* fp, int num)
 		scale *= 1000;
 	}
 
-	fprintf(fp, "%llu", n1);
+	fprintf(fp, "%lu", n1);
 
 	while (scale != 1) {
 		scale /= 1000;
 		n1 = n2 / scale;
 		n2 = n2 % scale;
-		fprintf(fp, ",%03llu", n1);
+		fprintf(fp, ",%03lu", n1);
 	}
 }
