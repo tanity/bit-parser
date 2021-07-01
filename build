@@ -1,0 +1,4 @@
+#!/bin/sh
+
+gcc parser.c -o parser -O3 -I ./ -I./include
+./parser ./file/mlbpark.html
